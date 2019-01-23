@@ -88,3 +88,30 @@ print(player)
 del player["lives"]
 print(player)
 
+
+#brug af for-løkker med dictionaries
+
+for key,value in player.items():
+    print (key + " = " + str(value))
+
+
+# vi kan også få en liste kun med keys eller kun med values
+print("Keys   : " + str(player.keys()))
+print("Values : " + str(player.values()))
+
+# hvad nu hvis der er flere keys som har samme værdi?
+navne = { "martin" : "knudsen",
+          "martin" : "jensen"}
+print(navne["martin"])
+
+# Nesting
+print("############### Nesting af lister og dictioaries ###################")
+
+print(" eksempel på en liste i en dictonary")
+
+pizza1 = { "type" : "hawaii",
+          "ingredienser" : ["ananas", "ost","skinke","tomat"]}
+
+print("ingredienser i "+pizza1["type"] + " pizza:")
+for ingredient in pizza1["ingredienser"]:
+    print(ingredient)
