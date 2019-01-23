@@ -1,4 +1,4 @@
-""" Denne indeholder eksempel kode fra lektion 2 - betingelse og dictionaries"""
+""" Denne indeholder eksempel kode fra lektion 3 - betingelse og dictionaries"""
 
 print("lektion 3 - betingelse og dictionaries")
 
