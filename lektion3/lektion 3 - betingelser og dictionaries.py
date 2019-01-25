@@ -46,7 +46,7 @@ elif dag == 5:
     print("fredag")
 elif dag == 6:
     print("lørdag")
-elif dag==7:
+elif dag == 7:
     print("søndag")
 else:
     print("ukendt dag")
