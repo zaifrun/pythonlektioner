@@ -29,7 +29,7 @@ while mere:
         mere = False
     else:
         ingredienser.append(ingredient)
-print("Du har valgt følgende ingredienser til din pizza")
+print("Du har valgt følgende ingredqienser til din pizza")
 for ingredient in ingredienser:
     print(ingredient)
 
