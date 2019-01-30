@@ -2,9 +2,12 @@
 Det er normalt god skik at definere alle sine funktioner øverst i en fil eller
 i en seperat fil"""
 
+import tools as t
+
 #en funktion med en parameter (som skal angives)
 def hej(navn):
     print("Hej "+navn+" og velkommen til programmet!")
+
 
 #vi kan definere funktioner med flere parametre og også med default værdier
 #her er der to parametre, som begge har en default værdi - dvs. de er optional parameters.
@@ -61,3 +64,5 @@ print("************* Funktion med vilkårligt antal parametre ****************")
 list_cities("København")
 list_cities("Aarhus","København")
 #Vi kan også have en funktion som modtager et vilkårligt antal parametre
+
+t.hejsa("martin")
