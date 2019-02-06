@@ -23,9 +23,9 @@ print(navne)
 
 
 #tilføje elementer et sted i listen med insert
+#minliste.insert(1,"Keld")
 
-
-#slet elementer med del kommandoen - del list[2
+#slet elementer med del kommandoen - del list[2]
 
 
 #remove by value med remove("navn")
@@ -38,7 +38,7 @@ print(navne)
 #reverse af en liste med list.reverse() - ændrer på listen.
 
 #index -1 - bruges til sidste element
-print( navne[-1] )
+#print( navne[-1] )
 
 """ 
 #looping through a list
