@@ -6,7 +6,7 @@ print("lektion 2 - lister")
 
 minliste = []
 
-navne = ["martin","benny"]
+navne = ["martin", "benny"]
 
 
 #udskrivning af lister
