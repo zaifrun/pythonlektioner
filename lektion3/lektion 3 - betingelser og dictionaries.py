@@ -5,16 +5,16 @@ print("lektion 3 - betingelse og dictionaries")
 
 #forskel på = og ==
 print ("######## forskel på = og == ############")
-car = "Fiat"
+car = "Fiat"  # Tildeling
 
 print(car == "fiat")
 print(car == "Fiat")
 
-if car == "Fiat":
+if car == "Fiat":    #at teste om en variabel har en værdi
     print("Det er en Fiat")
 else:
     print("Det er ikke en Fiat")
-
+a = 2
 
 # nummeriske sammenligninger
 print(" ###### numeriske sammenligninger ###########3")
@@ -22,6 +22,8 @@ alder = 41
 print ("alder under 50: " + str(alder<50))
 print ("alder over 45 : " + str(alder>45))
 print (alder!=40)
+if alder!=40:
+    print("alderen er ikke 40")
 print (alder>40 and alder<50)
 print (alder>40 or alder > 60)
 
@@ -33,7 +35,7 @@ else:
     print("Det er ikke tirsdag")
 
 print("########### if-elif-else ##############")
-dag = 2
+dag = 10
 
 if dag == 1:
     print("mandag")
@@ -78,7 +80,7 @@ print("antal point : "+str(player["point"]))
 #print("farven er : " + player["Color"])
 
 #Hvis man vil være sikker, så kan man bruge get
-#print("farven er : " + player.get("Color","udefineret farve"))
+print("farven er : " + player.get("color", "udefineret farve"))
 
 #så en ordbog består af keys og values (nøgler og værdier) på dansk
 
@@ -109,16 +111,22 @@ print("Values : " + str(player.values()))
 print("########### Duplicate keys ##########")
 # hvad nu hvis der er flere keys som har samme værdi?
 navne = { "martin": "knudsen",
-          "martin": "jensen"}
+          "mads": "knudsen"}
 print(navne["martin"])
 
 # Nesting
 print("############### Nesting af lister og dictioaries ###################")
 
-print(" eksempel på en liste i en dictonary")
+print(" eksempel på en liste i en dictionary")
 
 pizza1 = { "type" : "hawaii",
           "ingredienser" : ["ananas", "ost","skinke","tomat"]}
+
+""" sådan skal man IKKE gøre
+pizza2 = { "type" : "meat lover",
+          "ingrediens1" : "pepperoni",
+          "ingrediens2" : "bacon"}
+          """
 
 print("ingredienser i "+pizza1["type"] + " pizza:")
 for ingredient in pizza1["ingredienser"]:
