@@ -32,7 +32,7 @@ if tirsdag:
 else:
     print("Det er ikke tirsdag")
 
-print ("########### if-elif-else ##############")
+print("########### if-elif-else ##############")
 dag = 2
 
 if dag == 1:
@@ -108,8 +108,8 @@ print("Values : " + str(player.values()))
 
 print("########### Duplicate keys ##########")
 # hvad nu hvis der er flere keys som har samme værdi?
-navne = { "martin" : "knudsen",
-          "martin" : "jensen"}
+navne = { "martin": "knudsen",
+          "martin": "jensen"}
 print(navne["martin"])
 
 # Nesting
