@@ -6,6 +6,7 @@ print("lektion 3 - betingelse og dictionaries")
 #forskel på = og ==
 print ("######## forskel på = og == ############")
 car = "Fiat"
+
 print(car == "fiat")
 print(car == "Fiat")
 
@@ -32,7 +33,7 @@ else:
     print("Det er ikke tirsdag")
 
 print ("########### if-elif-else ##############")
-dag = 4
+dag = 2
 
 if dag == 1:
     print("mandag")
@@ -50,7 +51,7 @@ elif dag == 7:
     print("søndag")
 else:
     print("ukendt dag")
-
+#kunne ovenstående måske laves smartere?
 
 # betingelser i forbindelse med lister.
 
@@ -65,13 +66,19 @@ else:
 
 #dictionaries
 
-print("############# dictionaries - ordbøger")
+print("############# dictionaries - ordbøger ########")
 
 player = { "color" : "green" , "point" : 5}
 print(player)
 
 print("farven er : "+ player["color"])
 print("antal point : "+str(player["point"]))
+
+######## hvad hvis man slår forkerte ting op? ########
+#print("farven er : " + player["Color"])
+
+#Hvis man vil være sikker, så kan man bruge get
+#print("farven er : " + player.get("Color","udefineret farve"))
 
 #så en ordbog består af keys og values (nøgler og værdier) på dansk
 
@@ -83,15 +90,15 @@ player["color"] = "blue"
 
 print(player)
 
-# vi kan også fjerne key values
+# vi kan også fjerne key/values
 
 del player["lives"]
 print(player)
 
-
+print("######## for løkker med dictionaries ##########")
 #brug af for-løkker med dictionaries
 
-for key,value in player.items():
+for key, value in player.items():
     print (key + " = " + str(value))
 
 
@@ -99,6 +106,7 @@ for key,value in player.items():
 print("Keys   : " + str(player.keys()))
 print("Values : " + str(player.values()))
 
+print("########### Duplicate keys ##########")
 # hvad nu hvis der er flere keys som har samme værdi?
 navne = { "martin" : "knudsen",
           "martin" : "jensen"}
