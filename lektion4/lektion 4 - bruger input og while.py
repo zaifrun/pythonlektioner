@@ -1,10 +1,10 @@
 """ Denne indeholder eksempel kode fra lektion 4 - bruger input og while"""
 
 
-navn = input("Hvad er dit navn:")
+navn = input("Hvad er dit navn: ")
 print("Hej "+navn +"!")
 
-alder = int(input("Hvad er din alder, "+navn+"?"))
+alder = int(input("Hvad er din alder, "+navn+"? "))
 
 if alder<18:
     print("Du er meget ung!")
@@ -19,6 +19,7 @@ print("########### Et eksempel på en while løkke #########")
 while counter<11:
     print(counter)
     counter+=1
+
 
 ##########Vi kan også "gå ud af en løkke" vha af break
 print("########## break fra en løkkke #############")
@@ -35,7 +36,7 @@ print("Når du er færdig med at indtaste ingredienser, skriv 'q'")
 mere = True
 ingredienser = []
 while mere:
-    ingredient = input("Hvad vil du have på din pizza?")
+    ingredient = input("Hvad vil du have på din pizza? ")
     if ingredient == "q":
         mere = False  # kunne vi have gjort noget andet her?
     else:

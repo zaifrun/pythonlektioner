@@ -32,6 +32,10 @@ class Fugl(Dyr):
     def __init__(self,navn="",alder = 0,kanflyve = True):
         super().__init__(navn, alder)
         self.kanflyve = kanflyve
+        self.hastighed = 0
+
+    def flyv(self,hastighed):
+        self.hastighed = 50
 
     def tostring(self):
         if self.kanflyve:
@@ -52,3 +56,11 @@ print("###########Dyre liste##################")
 liste = [dyr1,dyr2,struds,falk,fido]
 for dyr in liste:
     print(dyr.tostring())
+
+print(struds.hastighed)
+struds.flyv()
+print(struds.hastighed)
+
+#nedenunder vil ikke virke.....hvorfor ikke?
+#dyr1.flyv()
+

@@ -2,7 +2,7 @@
 Det er normalt god skik at definere alle sine funktioner øverst i en fil eller
 i en seperat fil"""
 
-import tools as t
+import tools as mytools
 
 #en funktion med en parameter (som skal angives)
 def hej(navn):
@@ -65,4 +65,5 @@ list_cities("København")
 list_cities("Aarhus","København")
 #Vi kan også have en funktion som modtager et vilkårligt antal parametre
 
-t.hejsa("martin")
+#vi kan også kalde funktioner fra andre moduler
+mytools.hejsa("martin")
