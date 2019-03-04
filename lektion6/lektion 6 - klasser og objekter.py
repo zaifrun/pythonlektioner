@@ -6,12 +6,16 @@ class Dyr():
         self.navn = navn
         self.alder = alder
 
+    def printnavn(self):
+        print("Mit navn er "+self.navn)
+
     def tostring(self):
         s = self.navn + " er "+str(self.alder)+" år"
         return s
 
 dyr1 = Dyr("fido",20)
 dyr2 = Dyr("Snaky",10)
+dyr1.printnavn()
 print(dyr1.tostring())
 print(dyr2.tostring())
 
@@ -34,7 +38,7 @@ class Fugl(Dyr):
         self.kanflyve = kanflyve
         self.hastighed = 0
 
-    def flyv(self,hastighed):
+    def flyv(self):
         self.hastighed = 50
 
     def tostring(self):
@@ -57,10 +61,14 @@ liste = [dyr1,dyr2,struds,falk,fido]
 for dyr in liste:
     print(dyr.tostring())
 
-print(struds.hastighed)
+print("struds hastighed : "+ str(struds.hastighed))
 struds.flyv()
-print(struds.hastighed)
+print("struds hastighed : "+str(struds.hastighed))
 
 #nedenunder vil ikke virke.....hvorfor ikke?
-#dyr1.flyv()
+#dyr1.flyv
+help(object)
+#help(str)
+
+
 
