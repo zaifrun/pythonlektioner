@@ -27,7 +27,7 @@ while True:
         break
     alder = int(alder)
     if alder < 3:
-        print("biletten er gratis")
+        print("billetten er gratis")
     elif 3 <= alder <= 12:
         print("billetten koster 10 dollars")
         samlet_pris += 10
@@ -83,6 +83,7 @@ mereInput = True
 while mereInput:
     ordet = input("Indtast ord du gerne vil have oversæt fra dansk til engelsk")
     if ordet in ordbog.keys():
+       # oversaettelse = ordbog.get(ordet,"jeg fandt ikke dit ord")
         print("på engelsk: "+ordbog[ordet])
     else:
         if ordet == "q":
@@ -119,7 +120,7 @@ print("for løkke til en while løkke")
 x = 0
 while x < 11:
     print(x)
-    x += 1
+    x += 1   # x = x +1
 
 print("while løkke til en for løkke")
 # en while løkke
@@ -135,13 +136,21 @@ for nr in tal:
     else:
         break
 
+""" 
+liste = ["test"]
+for ting in liste:
+    print(ting)
+    liste.append("ting")
+"""
+
+
 
 # Vi kan faktisk godt lave en uendelig løkke i python
 #  med en for loop
 
-"""
+
 import itertools
 for i in itertools.count():
     print("uendelig løkke")
-"""
+
 

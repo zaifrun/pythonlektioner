@@ -10,13 +10,20 @@ def hej(navn):
     print("Hej "+navn+" og velkommen til programmet!")
 
 
-# her er det to obligatoriske paremetre og
+# her er det to obligatoriske parametre og
 # en optional parameter
-def print_person(navn, efternavn, alder=-1):
+def print_person(navn="", efternavn="", alder=-1):
     if alder != -1:
         print(navn + " " + efternavn + " er "+str(alder) + " år gammel")
     else:
         print(navn + " " + efternavn)
+
+#virker ikke!
+print_person()
+print_person("martin")
+print_person("martin","knudsen")
+print_person("martin","knudsen",40)
+print_person(alder=40,navn= "martin",efternavn = "knudsen")
 
 
 # vi kan definere funktioner med flere parametre og også med default
@@ -76,12 +83,12 @@ beskriv_dyr(race="kat")
 
 ######### numeriske værdier til en funktion ############
 print("######## numeriske værdier i en funktion #######")
-print("resultatat er " + ret_linje(2))
+print("resultatet er " + str(ret_linje(2)))
 # næste linje giver en fejl - hvorfor?
-# print(ret_linje("benny"))
+print(ret_linje("benny"))
 
 # statisk type
-# ret_linje_statisk("benny")
+ret_linje_statisk("benny")
 # print("resultatet er "+ ret_linje_statisk(10))
 # demonstration af indbyggede funktioner
 print("længden af martin :" + str(len("martin")))
@@ -98,7 +105,9 @@ venner = ["Jens", "Bo", "Karin"]
 # et eksempel på en funktion som tager en liste (af strings)
 greet_people(venner)
 # hvad med linjen nedenunder
-#greet_people(2)
+venner2 = [10, 20, 30]
+#dette virker ikke, fordi at listen nu indeholder tal.
+#greet_people(venner2)
 
 print("####### modifikation af parametre ########")
 
@@ -122,7 +131,6 @@ print("Mit tal er : " + str(mit_tal))
 # andre gange ikke.
 # hvis du vil være sikker på at listen ikke modificeres så kan du
 # sende en kopi med:
-
 print("####### modifikation af parametre  - send kopi med ########")
 
 venner = ["Jens", "Bo", "Karin"]
@@ -134,8 +142,12 @@ print(venner)
 print("************* Funktion med vilkårligt antal parametre ****************")
 list_cities("København")
 list_cities("Aarhus", "København")
+list_cities("Aarhus", "København","Berlin","New York")
+list_cities(1,23,44,45454,4545454545)
+
 # Vi kan også have en funktion som modtager et vilkårligt
 # antal parametre
 
 # vi kan også kalde funktioner fra andre moduler
 mytools.hejsa("martin")
+mytools.hejsa2()
