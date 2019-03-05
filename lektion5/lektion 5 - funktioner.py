@@ -12,13 +12,13 @@ def hej(navn):
 
 # her er det to obligatoriske parametre og
 # en optional parameter
-def print_person(navn="", efternavn="", alder=-1):
+def print_person(navn, efternavn="", alder=-1):
     if alder != -1:
         print(navn + " " + efternavn + " er "+str(alder) + " år gammel")
     else:
         print(navn + " " + efternavn)
 
-#virker ikke!
+#virker ikke! Der mangler jo nogle parametre
 print_person()
 print_person("martin")
 print_person("martin","knudsen")
